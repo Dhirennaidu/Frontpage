@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+  <title>Homepage</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="npm i bootstrap-icons">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +14,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+
 <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
 <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
 <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
@@ -23,9 +25,7 @@
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>   
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
-<title>Home Page</title>
-   <style>
+<style>
 * {box-sizing: border-box;}
 
 body { background-color:white;
@@ -35,10 +35,8 @@ body { background-color:white;
 
 .header {
   overflow: hidden;
-  background-color: white;
-  padding: 10px 10px;
- 
- 
+  background-color: #f1f1f1;
+  padding: 20px 10px;
 }
 
 .header a {
@@ -63,127 +61,44 @@ body { background-color:white;
 }
 
 .header a.active {
- 
+  background-color: dodgerblue;
+  color: white;
 }
 
 .header-right {
   float: right;
 }
-.header a:hover {
-  border-bottom: 3px solid red;
-}
 
-.header a.active {
-  border-bottom: 3px solid red;
-}
 @media screen and (max-width: 500px) {
   .header a {
     float: none;
     display: block;
     text-align: left;
   }
-  @media screen and (max-width: 350px) {
-  .header a {
-    font-size:30px;
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {font-size:30px;
-    float: none;
-  }
-}
-html{
-  scroll-behavior:smooth;
-}
-
-.item-card{
-  transition:0.5s;
-  cursor:pointer;
-}
-.item-card-title{  
-  font-size:15px;
-  transition:1s;
-  cursor:pointer;
-}
-.item-card-title i{  
-  font-size:15px;
-  transition:1s;
-  cursor:pointer;
-  color:#ffa710
-}
-.card-title i:hover{
-  transform: scale(1.25) rotate(100deg); 
-  color:#18d4ca;
   
-}
-.card:hover{
-  transform: scale(1.05);
-  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-}
-.card-text{
-  height:80px;  
-}
-
-.card::before, .card::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transform: scale3d(0, 0, 1);
-  transition: transform .3s ease-out 0s;
-  background: rgba(255, 255, 255, 0.1);
-  content: '';
-  pointer-events: none;
-}
-.card::before {
-  transform-origin: left top;
-}
-.card::after {
-  transform-origin: right bottom;
-}
-.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
-  transform: scale3d(1, 1, 1);
+  .header-right {
+    float: none;
+  }
 }
 </style>
 </head>
 <body>
-<div class="header" style="background-color:white;">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:white;">
-        <div class="container-fluid">
-             <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4"><font color="orange" size="10"><strong>E-Stock Market</strong></font></p>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-               
-                <div class="navbar-nav ms-auto">
-                      <div class="nav-item dropdown">
-                       
-                        <a class="active" href="#home">Home</a>
-    <a onclick="window.history.forward();" href="UserLogin.php">Login</a>
-    <a href="Employ.php">Employ</a>
-    <a href="Adminlog.php">Admin</a>
-                    </div>
-                     
-                </div>
-            </div>
-        </div>
-    </nav>
-</div>
-<!--<div class="header">
- <font color="orange" size="10"><strong>E-Stock Market</strong></font>
+
+<div class="header">
+  <a href="#default" class="logo"><font color="orange" size="6"><strong>E-Stock Market</strong></font></a>
   <div class="header-right">
-    <div class="navbar-nav">
-    <a class="active" href="#home">Home</a>
+  <a class="active" href="">Home</a>
     <a onclick="window.history.forward();" href="UserLogin.php">Login</a>
     <a href="Employ.php">Employ</a>
     <a href="Adminlog.php">Admin</a>
   </div>
 </div>
+
+<!--<div style="padding-left:20px">
+  <h1>Responsive Header</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>Some content..</p>
 </div>-->
-<!---slide show----->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -222,25 +137,16 @@ html{
     <span class="sr-only">Next</span>
   </a>
 </div><br><br><br><br><br>
-<!-------------->
 <div class="container mt-2">
-<!--   <div class="card card-block mb-2">
-    <h4 class="card-title">Card 1</h4>
-    <p class="card-text">Welcom to bootstrap card styles</p>
-    <a href="#" class="btn btn-primary">Submit</a>
-  </div>   -->
-  
-  <center><h1>
+<center><h5>
  <font style="font-family: 'Oswald', sans-serif;
-" size="10">
+" size="5">
   <a href="" class="typewrite" data-period="2000" data-type='[ "Hii.Well Come TO E-Stock Market", "E-Stock Market Provide Best ", "Laptop", "Mobile","Tablet","Order Now" ]'>
     <span class="wrap"></span>
   </a></font>
-</h1></center>
-  
+</h5></center>
 </div><br><br><br>
-<!-- Footer -->
-
+<!---footer---->
 <div class="container mt-2">
 <!--   <div class="card card-block mb-2">
     <h4 class="card-title">Card 1</h4>
@@ -250,7 +156,7 @@ html{
   
     <img src="mobip.JPEG" alt="Photo of sunset" style="width:100%">
   
-</div><br><br><br>
+</div><br>
 <div class="container mt-2">
 <!--   <div class="card card-block mb-2">
     <h4 class="card-title">Card 1</h4>
@@ -260,7 +166,7 @@ html{
   
     <img src="PPP.JPEG" alt="Photo of sunset" style="width:100%">
   
-</div><br><br><br>
+</div><br>
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">
   <!-- Section: Social media -->
@@ -276,9 +182,7 @@ html{
       <a href="" class="me-4 link-secondary" color="black">
         <i class="fa fa-facebook"></i>
       </a>
-      <a href="" class="me-4 link-secondary">
-        <i class="fa fa-twitter"></i>
-      </a>
+     
       <a href="" class="me-4 link-secondary">
         <i class="fa fa-google"></i>
       </a>
@@ -320,7 +224,7 @@ html{
             Designed By
           </h6>
           <p>
-            <a href="" class="text-reset">Dhiren naidu</a>
+            <a href="#!" class="text-reset">Dhiren naidu</a>
           </p>
           <p>
             <a href="#!" class="text-reset"></a>
@@ -381,7 +285,8 @@ html{
   </div>
   <!-- Copyright -->
 </footer>
-
+<!-- Footer -->
+<!-- Footer -->
 </body>
 <script>
 var TxtType = function(el, toRotate, period) {
